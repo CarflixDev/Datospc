@@ -115,7 +115,7 @@ class CamposWindow(QDialog):
 
         # Cargar el archivo en el servidor FTP
         try:
-            ftp = FTP('10.85.252.18')
+            ftp = FTP('x.x.x.x')
             ftp.login()  # Iniciar sesión en el servidor FTP (puede requerir credenciales)
             with open(ruta_txt, 'rb') as archivo_local:
                 ftp.storbinary(f'STOR /METROSUDFTP/00.Datospc/{nombre_pc}.txt', archivo_local)
